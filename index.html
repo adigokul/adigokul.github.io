@@ -3,89 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Home</title>
+  <title>Netflix Clone</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-  <!-- Navigation -->
-  <header>
+  <header class="header">
+    <img src="netflix-logo.png" alt="Netflix Logo" class="logo">
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <button class="sign-in">Sign In</button>
     </nav>
   </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container">
-      <h1>Welcome to My Personal Website</h1>
-      <p>Hi, I'm <strong>Gokul Adithya S</strong>. I'm a PhD studnet at Scene Representation Group, MIT.</p>
-      <a href="#about" class="btn">Learn More</a>
+  <section class="hero">
+    <h1>Unlimited movies, TV shows, and more.</h1>
+    <h2>Watch anywhere. Cancel anytime.</h2>
+    <form class="email-signup">
+      <input type="email" placeholder="Email address" required>
+      <button type="submit">Get Started</button>
+    </form>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <h3>Enjoy on your TV.</h3>
+      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    </div>
+    <div class="feature">
+      <h3>Download your shows to watch offline.</h3>
+      <p>Save your favorites easily and always have something to watch.</p>
+    </div>
+    <div class="feature">
+      <h3>Watch everywhere.</h3>
+      <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
     </div>
   </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Write a brief bio about yourself—your background, skills, interests, and goals.</p>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <div class="grid">
-        <!-- Example Project Card -->
-        <div class="card">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project Title</h3>
-          <p>Short description of the project.</p>
-          <a href="#" class="btn">View Details</a>
-        </div>
-        <!-- Repeat cards for other projects -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="#" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Your Name. All rights reserved.</p>
-      <div class="social">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">Twitter</a>
-      </div>
-    </div>
+  <footer class="footer">
+    <p>&copy; 2025 Netflix Clone. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
